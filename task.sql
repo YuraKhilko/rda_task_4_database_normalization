@@ -4,7 +4,7 @@ CREATE DATABASE ShopDB;
 USE ShopDB;
 
 CREATE TABLE Countries (
-    ID INT AUTO_INCREMENT,
+    ID INT,
     Name VARCHAR(50),
     PRIMARY KEY (ID)
 );
@@ -36,9 +36,9 @@ CREATE TABLE ProductInventory (
 -- Populate test data
 
 INSERT INTO Countries (Name)
-	VALUES ('Country1');
-INSERT INTO Countries (Name)
-	VALUES ('Country2');
+	VALUES (1, 'Country1');
+INSERT INTO Countries (ID,Name)
+	VALUES (2, 'Country2');
 
 INSERT INTO Products (Name)
 	VALUES ('Awersome Product');
