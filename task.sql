@@ -37,7 +37,7 @@ CREATE TABLE ProductInventory (
 
 INSERT INTO Countries (Name)
 	VALUES ('Country1');
-INSERT INTO Countries (ID,Name)
+INSERT INTO Countries (Name)
 	VALUES ('Country2');
 
 INSERT INTO Products (Name)
