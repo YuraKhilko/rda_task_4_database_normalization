@@ -35,13 +35,13 @@ CREATE TABLE ProductInventory (
 
 -- Populate test data
 
+INSERT INTO Countries (Name)
+	VALUES ('Country1');
 INSERT INTO Countries (ID,Name)
-	VALUES (1, 'Country1');
-INSERT INTO Countries (ID,Name)
-	VALUES (2, 'Country2');
+	VALUES ('Country2');
 
 INSERT INTO Products (Name)
-	VALUES ('AwersomeProduct');
+	VALUES ('Awersome Product');
 
 INSERT INTO Warehouses (Name,Address,CountryID)
 	VALUES ('Warehouse-1','City-1, Street-1',1);
